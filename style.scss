@@ -1,11 +1,10 @@
-// * {
-//   outline: 1px solid red;
-// }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+  font-family: "Open Sans", sans-serif;
 }
 
 .site-wrapper {
@@ -121,7 +120,6 @@ body {
 .footer {
   text-align: center;
   color: #fff;
-  font-size: 1.2rem;
 
   &__links {
     list-style: none;
