@@ -12,6 +12,16 @@
   width: 30rem;
   height: auto;
   margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 0.6rem;
+}
+
+@media only screen and (max-width: 300px) {
+  .form-container {
+    width: 10rem;
+    text-align: center;
+  }
 }
 
 .form {
@@ -48,11 +58,39 @@
     border: none;
     border-radius: 0.6rem;
   }
+
+  @media only screen and (max-width: 300px) {
+    &__heading {
+      font-size: 1.2rem;
+    }
+
+    &__subheading,
+    &__finePrint,
+    &__login-text {
+      font-size: 1rem;
+    }
+
+    &__firstName,
+    &__lastName,
+    &__email,
+    &__password {
+      width: 50%;
+    }
+
+    &__firstName,
+    &__lastName {
+      margin: 0.5rem;
+    }
+
+    &__signUp-btn {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+  }
 }
 
 // Footer
 .footer {
-  margin-top: 6rem;
   text-align: center;
 
   &__links {
@@ -69,5 +107,17 @@
   &__design-credit,
   &__background-img {
     padding: 1rem 0.5rem;
+  }
+
+  @media only screen and (max-width: 300px) {
+    &__links {
+      padding: 0;
+    }
+
+    &__copyright,
+    &__design-credit,
+    &__background-img {
+      padding: 0;
+    }
   }
 }

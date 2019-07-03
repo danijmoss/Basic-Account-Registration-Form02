@@ -6,6 +6,16 @@
   width: 30rem;
   height: auto;
   margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 0.6rem;
+}
+
+@media only screen and (max-width: 300px) {
+  .form-container {
+    width: 10rem;
+    text-align: center;
+  }
 }
 
 .form {
@@ -44,8 +54,26 @@
   border-radius: 0.6rem;
 }
 
+@media only screen and (max-width: 300px) {
+  .form__heading {
+    font-size: 1.2rem;
+  }
+  .form__subheading, .form__finePrint, .form__login-text {
+    font-size: 1rem;
+  }
+  .form__firstName, .form__lastName, .form__email, .form__password {
+    width: 50%;
+  }
+  .form__firstName, .form__lastName {
+    margin: 0.5rem;
+  }
+  .form__signUp-btn {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}
+
 .footer {
-  margin-top: 6rem;
   text-align: center;
 }
 
@@ -61,5 +89,14 @@
 
 .footer__copyright, .footer__design-credit, .footer__background-img {
   padding: 1rem 0.5rem;
+}
+
+@media only screen and (max-width: 300px) {
+  .footer__links {
+    padding: 0;
+  }
+  .footer__copyright, .footer__design-credit, .footer__background-img {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
