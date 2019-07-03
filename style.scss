@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+$border-radius: 0.6rem;
+$input-padding: 0.8rem;
+
 body {
   margin: 0px;
   padding: 0px;
@@ -35,7 +38,7 @@ body {
   background-color: #fff;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
   .form-container {
     width: 10rem;
     text-align: center;
@@ -44,6 +47,18 @@ body {
 
 .form {
   text-align: center;
+  a:link,
+  a:active {
+    color: #24798f;
+  }
+
+  a:visited {
+    color: #a8a8a8;
+  }
+
+  a:hover {
+    color: #585858;
+  }
 
   &__heading {
     margin-bottom: 0.8rem;
@@ -56,26 +71,30 @@ body {
 
   &__firstName {
     margin: 1rem 0.5rem 0.5rem 0;
-    padding: 0.5rem;
+    padding: $input-padding;
     width: 40%;
+    border-radius: $border-radius;
   }
 
   &__lastName {
     margin: 1rem 0 0.5rem 0.5rem;
-    padding: 0.5rem;
+    padding: $input-padding;
     width: 40%;
+    border-radius: $border-radius;
   }
 
   &__email {
     width: 89%;
-    padding: 0.5rem;
+    padding: $input-padding;
     margin: 0.5rem;
+    border-radius: $border-radius;
   }
 
   &__password {
     width: 89%;
-    padding: 0.5rem;
+    padding: $input-padding;
     margin: 0.5rem;
+    border-radius: $border-radius;
   }
 
   &__signUp-btn {
@@ -83,10 +102,21 @@ body {
     padding: 1rem;
     font-size: 1.2rem;
     border: none;
-    border-radius: 0.6rem;
+    border-radius: $border-radius;
   }
 
-  @media only screen and (max-width: 300px) {
+  &__terms,
+  &__privacy {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &__login-link {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 400px) {
     &__heading {
       font-size: 1.2rem;
     }
@@ -120,6 +150,7 @@ body {
 .footer {
   text-align: center;
   color: #fff;
+  font-weight: bold;
 
   &__links {
     list-style: none;
@@ -133,6 +164,7 @@ body {
     a:link,
     a:active {
       color: #fff;
+      text-decoration: none;
     }
 
     a:visited {
@@ -155,6 +187,7 @@ body {
     a:link,
     a:active {
       color: #fff;
+      text-decoration: none;
     }
 
     a:visited {
@@ -166,7 +199,7 @@ body {
     }
   }
 
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 400px) {
     &__links {
       padding: 0;
     }
