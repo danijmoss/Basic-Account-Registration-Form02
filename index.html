@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Account Registration Form</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/b1ca4507bf.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Form Container -->
+      <div class="form-container">
+        <form class="form">
+          <!-- Site Logo -->
+          <div class="logo">
+            <i
+              aria-hidden="true"
+              class="far fa-car-building fa-3x"
+              title="City Co-Working"
+            ></i>
+            <span class="sr-only">City Co-Working</span>
+          </div>
+          <!-- End Site Logo -->
+          <h1 class="form__heading">Let's create your account</h1>
+
+          <p class="form__subheading">
+            Creating a new account is fast and easy!
+          </p>
+
+          <label for="firstName" class="form__firstName-label sr-only"
+            >First Name</label
+          >
+          <input
+            type="text"
+            class="form__firstName"
+            placeholder="First Name"
+            required
+            aria-required="true"
+            pattern="[^0-9]+"
+          />
+
+          <label for="lastName" class="form__lastName-label sr-only"
+            >Last Name</label
+          >
+          <input
+            type="text"
+            class="form__lastName"
+            placeholder="Last Name"
+            required
+            aria-required="true"
+            pattern="[^0-9]+"
+          />
+
+          <label for="email" class="form__email-label sr-only">Email</label>
+          <input
+            class="form__email"
+            type="email"
+            placeholder="Email eg: example@email.com"
+            required
+            aria-required="true"
+          />
+
+          <label for="password" class="form__password-label sr-only"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form__password"
+            placeholder="Password"
+            required
+            aria-required="true"
+          />
+
+          <p class="form__finePrint">
+            By signing up you agree with our
+            <a class="form__terms" href="#">Terms & Conditions</a> and
+            <a class="form__privacy" href="#">Privacy Policy</a>
+          </p>
+
+          <button class="form__signUp-btn">Sign Up</button>
+
+          <p class="form__login-text">
+            Already have an account?
+            <a class="form__login-link" href="#">Log in!</a>
+          </p>
+        </form>
+      </div>
+      <!-- End Form Container -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <ul class="footer__links">
+          <li class="footer__link-item"><a href="#">FAQ</a></li>
+          <li class="footer__link-item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer__link-item"><a href="#">Privacy</a></li>
+          <li class="footer__link-item"><a href="#">Help & Support</a></li>
+          <li class="footer__link-item"><a href="#">Contact Us</a></li>
+        </ul>
+        <p class="footer__credit">
+          <span class="footer__copyright">
+            &copy 2019 Danielle "Dani" Moss
+          </span>
+
+          <span class="footer__design-credit">
+            Original design made by
+            <a
+              href="https://dribbble.com/shots/5640911-Employment-website-registration"
+              target="_blank"
+              >Ivan Tuchkov</a
+            >
+          </span>
+
+          <span class="footer__background-img">
+            Background Photo by
+            <a
+              href="https://unsplash.com/@shridhar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              target="_blank"
+              >Shridhar Gupta</a
+            >
+            on
+            <a
+              class="footer__background-img"
+              href="https://unsplash.com/search/photos/office-workers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </span>
+        </p>
+      </footer>
+      <!-- End Footer -->
+    </div>
+  </body>
+</html>
