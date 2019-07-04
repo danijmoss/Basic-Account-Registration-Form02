@@ -19,7 +19,7 @@ body {
 
 .logo {
   padding: 3rem;
-  color: #24798f;
+  color: #fff;
 }
 
 .form-container {
@@ -32,9 +32,21 @@ body {
   background-color: #fff;
 }
 
+@media only screen and (max-width: 425px) {
+  .form-container {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .form-container {
+    width: 20rem;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .form-container {
-    width: 10rem;
+    width: 15rem;
     text-align: center;
   }
 }
@@ -99,6 +111,10 @@ body {
   font-size: 1.2rem;
   border: none;
   border-radius: 0.6rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#24798f), to(#3cb9d8));
+  background-image: linear-gradient(to bottom right, #24798f, #3cb9d8);
+  color: #fff;
+  font-weight: bold;
 }
 
 .form__terms, .form__privacy {
@@ -111,12 +127,30 @@ body {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 425px) {
+  .form .form__firstName, .form .form__lastName, .form .form__email, .form .form__password {
+    width: 85%;
+  }
+  .form .form__firstName, .form .form__lastName {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .form .form__firstName, .form .form__lastName, .form .form__email, .form .form__password {
+    width: 85%;
+  }
+  .form .form__firstName, .form .form__lastName {
+    margin: 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .form__heading {
     font-size: 1.2rem;
   }
   .form__subheading, .form__finePrint, .form__login-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .form__firstName, .form__lastName, .form__email, .form__password {
     width: 50%;
@@ -179,11 +213,26 @@ body {
   color: #ddd;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .footer__links {
+    padding: 0.5rem;
+  }
+  .footer__credit {
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .footer__links, .footer__copyright, .footer__design-credit, .footer__background-img {
     padding: 0;
   }
-  .footer__copyright, .footer__design-credit, .footer__background-img {
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+  .footer__links, .footer__copyright, .footer__design-credit, .footer__background-img {
     padding: 0;
   }
 }
